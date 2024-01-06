@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "251866071430",
+    "project_id": "onlinefoodapp-a1e33",
+    "storage_bucket": "onlinefoodapp-a1e33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251866071430:android:6c49e2499d59a06801ac07",
+        "android_client_info": {
+          "package_name": "com.example.foodonlineapapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt2dOmR7-tTZqFrhv9AVJlxRnKCA_EZMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
