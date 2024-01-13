@@ -88,7 +88,7 @@ class CategoryDetail extends StatelessWidget {
                                           .color(darkFontGrey)
                                           .make(),
                                       10.heightBox,
-                                      "${data[index]['p_price']}"
+                                      "${data[index]['p_price']} vnd"
                                           .text
                                           .color(redColor)
                                           .fontFamily(bold)

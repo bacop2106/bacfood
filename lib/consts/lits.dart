@@ -8,8 +8,8 @@ const secondSlidersList = [imgSs1, imgSs2, imgSs3, imgSs4];
 const featuredImage1 = [imgS1, imgS2, imgS3];
 const featuredImage2 = [imgS4, imgS5, imgS6];
 
-const featuredTitles1 = [womenDress, girlsDress, girlsWatches];
-const featuredTitles2 = [boyGlasses, mobilePhone, tShirts];
+const featuredTitles1 = ["Cơm", "Phở", "Trà sữa"];
+const featuredTitles2 = ["Đồ ăn vặt", "Ăn khuya", "Món nhậu"];
 
 const categoriesList = [
   womenDress,

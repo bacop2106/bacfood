@@ -1,10 +1,10 @@
 import 'package:foodonlineapapp/consts/consts.dart';
 
 class FirestorServices {
-  static getUser(uid) {
+  static getUser() {
     return firestore
         .collection(usersCollection)
-        .where('id', isEqualTo: uid)
+        .where('id')
         .snapshots();
   }
 
@@ -26,7 +26,7 @@ class FirestorServices {
     return firestore.collection(cartCollection).doc(docId).delete();
   }
 
-  static getAllOrders() {
+  static getAllOrders(uid) {
     return firestore
         .collection(orderCollection)
         .where('order_by', isEqualTo: currentUser!.uid)

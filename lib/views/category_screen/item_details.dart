@@ -88,8 +88,7 @@ class ItemDetails extends StatelessWidget {
                         size: 25,
                       ),
                       10.heightBox,
-                      "${data['p_price']}"
-                          .numCurrency
+                      "${data['p_price']} vnd"
                           .text
                           .color(redColor)
                           .fontFamily(bold)
@@ -220,44 +219,44 @@ class ItemDetails extends StatelessWidget {
                           .color(darkFontGrey)
                           .make(),
                       10.heightBox,
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(
-                          children: List.generate(
-                              6,
-                              (index) => Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Image.asset(
-                                        imgP1,
-                                        width: 130,
-                                        fit: BoxFit.cover,
-                                      ),
-                                      10.heightBox,
-                                      "Laptop 4Gb/64GB"
-                                          .text
-                                          .fontFamily(bold)
-                                          .color(darkFontGrey)
-                                          .make(),
-                                      10.heightBox,
-                                      "\$600"
-                                          .text
-                                          .color(redColor)
-                                          .fontFamily(bold)
-                                          .size(16)
-                                          .make()
-                                    ],
-                                  )
-                                      .box
-                                      .white
-                                      .margin(const EdgeInsets.symmetric(
-                                          horizontal: 4))
-                                      .roundedSM
-                                      .padding(const EdgeInsets.all(8))
-                                      .make()),
-                        ),
-                      )
+                      // SingleChildScrollView(
+                      //   scrollDirection: Axis.horizontal,
+                      //   child: Row(
+                      //     children: List.generate(
+                      //         6,
+                      //         (index) => Column(
+                      //               crossAxisAlignment:
+                      //                   CrossAxisAlignment.start,
+                      //               children: [
+                      //                 Image.asset(
+                      //                   imgP1,
+                      //                   width: 130,
+                      //                   fit: BoxFit.cover,
+                      //                 ),
+                      //                 10.heightBox,
+                      //                 "Laptop 4Gb/64GB"
+                      //                     .text
+                      //                     .fontFamily(bold)
+                      //                     .color(darkFontGrey)
+                      //                     .make(),
+                      //                 10.heightBox,
+                      //                 "\$600"
+                      //                     .text
+                      //                     .color(redColor)
+                      //                     .fontFamily(bold)
+                      //                     .size(16)
+                      //                     .make()
+                      //               ],
+                      //             )
+                      //                 .box
+                      //                 .white
+                      //                 .margin(const EdgeInsets.symmetric(
+                      //                     horizontal: 4))
+                      //                 .roundedSM
+                      //                 .padding(const EdgeInsets.all(8))
+                      //                 .make()),
+                      //   ),
+                      // )
                     ],
                   ),
                 ),

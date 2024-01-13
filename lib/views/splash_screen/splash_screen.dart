@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Get.to(()=>const LoginScreen());
         }else{
           // Get.to(()=>const LoginScreen());
-          Get.to(()=>const Home());
+          Get.to(()=>const LoginScreen());
         }
       });
     });

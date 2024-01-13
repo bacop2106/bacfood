@@ -16,7 +16,7 @@ class OrderScreen extends StatelessWidget {
         title: "My order".text.color(darkFontGrey).fontFamily(bold).make(),
       ),
       body: StreamBuilder(
-        stream: FirestorServices.getAllOrders(),
+        stream: FirestorServices.getAllOrders(currentUser!.uid),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if (!snapshot.hasData) {
             return Center(
