@@ -22,7 +22,7 @@ class ProfileScreen extends StatelessWidget {
     return bgWidget(
       child: Scaffold(
         body: StreamBuilder(
-          stream: FirestorServices.getUser(),
+          stream: FirestorServices.getUser(currentUser!.uid),
           // initialData: ,
           builder: (BuildContext context, AsyncSnapshot snapshot) {
             if (!snapshot.hasData) {
@@ -71,12 +71,12 @@ class ProfileScreen extends StatelessWidget {
                               child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              // "${data['name']}"
-                              //     .text
-                              //     .fontFamily(bold)
-                              //     .white
-                              //     .make(),
-                              "${data['email']}".text.white.make(),
+                              "${data['name']}"
+                                  .text
+                                  .fontFamily(bold)
+                                  .white
+                                  .make(),
+                              // "${data['email']}".text.white.make(),
                             ],
                           )),
                           OutlinedButton(
@@ -110,7 +110,7 @@ class ProfileScreen extends StatelessWidget {
                                 detailsCard(context.screenWidth / 3.2,
                                     data['wishlist'], "your wishlist"),
                                 detailsCard(context.screenWidth / 3.2,
-                                    countData.toString(), "your orders")
+                                   "3", "your orders")
                               ],
                             );
                           }

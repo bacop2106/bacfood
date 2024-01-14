@@ -1,5 +1,6 @@
 import 'package:foodonlineapapp/consts/consts.dart';
 import 'package:foodonlineapapp/order_screen/components/order_place_detail.dart';
+import 'package:foodonlineapapp/order_screen/components/order_status.dart';
 import 'package:intl/intl.dart' as intl;
 
 class OrderDetails extends StatelessWidget {
@@ -20,6 +21,26 @@ class OrderDetails extends StatelessWidget {
           physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
+              orderStatus(
+                  color: redColor,
+                  icon: Icons.done,
+                  title: "Placed",
+                  showDone: data['order_placed']),
+              orderStatus(
+                  color: Colors.blue,
+                  icon: Icons.thumb_up,
+                  title: "Confirmed",
+                  showDone: data['order_confirmed']),
+              orderStatus(
+                  color: Colors.black,
+                  icon: Icons.car_crash,
+                  title: "On Delivery",
+                  showDone: data['order_on_delivery']),
+              orderStatus(
+                  color: Colors.purple,
+                  icon: Icons.done_all_rounded,
+                  title: "Delivered",
+                  showDone: data['order_delivery']),
               Column(
                 children: [
                   orderPlaceDetails("Order code", "Shipping Method",
